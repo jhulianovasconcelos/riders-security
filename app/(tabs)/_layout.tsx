@@ -24,14 +24,42 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="login"
         options={{
-          title: 'Explore',
+          title: 'Entrar',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'log-in' : 'log-in-outline'} color={color} />
           ),
         }}
       />
+      <Tabs.Screen
+        name="register"
+        options={{
+          title: 'Cadastrar',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'clipboard' : 'clipboard-outline'} color={color} />
+          ),
+        }}
+      />
+       <Tabs.Screen
+        name="deviceList"
+        options={{
+          title: 'Dispositivos',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'list' : 'list-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="addDevice"
+        options={{
+          title: 'Adicionar',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'add-circle' : 'add-circle-outline'} color={color} />
+          ),
+        }}
+      />
+     
     </Tabs>
   );
 }
